@@ -72,7 +72,7 @@ export default function ExpenseForm({ isOpened, onClose }) {
                     onChange={handleChange}
                     required
                 />
-                <select
+                {/* <select
                     name="currency"
                     value={expenseInput.currency}
                     onChange={handleChange}
@@ -81,8 +81,8 @@ export default function ExpenseForm({ isOpened, onClose }) {
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="GBP">GBP</option>
-                    {/* Add more currency options as needed */}
-                </select>
+                
+                </select> */}
                 <select
                     name="type"
                     value={expenseInput.type}
@@ -92,7 +92,7 @@ export default function ExpenseForm({ isOpened, onClose }) {
                     <option value="expenses">Expenses</option>
                     <option value="income">Income</option>
                     <option value="savings">Savings</option>
-                    <option value="investment">Investment</option>
+                
                 </select>
                 <button   type="submit">Add Expense</button>
                 <button  onClick={onClose} type="button">Close</button>

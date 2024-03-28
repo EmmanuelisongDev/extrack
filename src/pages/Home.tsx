@@ -1,7 +1,9 @@
 import styled from "styled-components"
 import { IoAdd } from "react-icons/io5";
-import { ExpenseForm } from "../components";
+import { ExpenseForm,BudgetCard } from "../components";
+
 import { useState } from "react";
+
 export default function Home() {
   const [isOpened, setIsOpened] = useState(false);
 
@@ -13,6 +15,7 @@ export default function Home() {
     <Main>
       <div >
       <IoAddIcon onClick={() => setIsOpened(true)} />
+    <BudgetCard/>
       </div>
     </Main>
     </>
